@@ -1,0 +1,12 @@
+```{r ejemplo, eval = requireNamespace("consultabserelacional", quietly = TRUE)}
+library(consultabserelacional)
+
+# Resumen general por fase clínica en melanoma
+resumen_ensayos_aact("Melanoma")
+
+# Top 10 promotores con más ensayos completados en Fase 3
+top_promotores_fase3_aact(limite = 10)
+
+# Distribución por tipo de intervención en melanoma
+head(intervencion_por_patologia_aact("melanoma"), 10)
+```
